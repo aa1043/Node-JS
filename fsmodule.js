@@ -134,3 +134,40 @@ fs.open('hello.txt',(err,data)=>
       console.log(data); 
     }
   })
+
+//       READS THE FILE NAMES FROM THE MENTIONED FOLDER AND UNIQUELY IDENTEFIES A FILE OR A FOLDER
+
+fs.readdir("newfolder",{withFileTypes:true},(err,data)=>
+{
+  if(err)
+  {
+    console.error(err); 
+  }
+  else{
+    console.log(data);
+    
+  }
+})
+
+//        OUTPUT IS LIKE THIS 1 MEANS FILE AND 2 MEANS FOLDER
+
+/*[
+  Dirent {
+    name: 'BYE.TXT',
+    parentPath: 'newfolder',
+    path: 'newfolder',
+    [Symbol(type)]: 1
+  },
+  Dirent {
+    name: 'DFGH.HG',
+    parentPath: 'newfolder',
+    path: 'newfolder',
+    [Symbol(type)]: 2
+  },
+  Dirent {
+    name: 'HI.TXT',
+    parentPath: 'newfolder',
+    path: 'newfolder',
+    [Symbol(type)]: 1
+  }
+]*/
