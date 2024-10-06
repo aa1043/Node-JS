@@ -1,0 +1,16 @@
+100     Its like the request has succesfully reached
+101     it is when the request reaches and gets modified like suppose we have sent a http protocol but server thinks that websocket should be used and updates it accordingly
+200    It means server has recieve request and response sent succesfully
+201    It means that something has been created on the server
+202    It means request accepted and in processing phase
+203    It means that arrived to a server and then forwarded further or suppose a request arrived to a server and then get shared with another server
+301    It means that the data you are trying to find is no longer present there and has been moved temporarily
+307    It means that the data has been temporarily moved
+308    It means that the data has been permanently moved
+400    Bad Request when you enter wrong parameters like suppose you are asked for your name ph number and u entered something wrong then it it 400
+401    Unauthorized like when you try u edit but u are not the admin then it gives 401 or suppose u have to login to acces a site and u r email or password osent match tht is also a case of 401
+403    It is like u are trying to get something that u are not allowed to 
+404    Not found like when u oppen an empty url
+500    when u req but server cnat fullfill due to some reason then it gives 500 (Internal Server Error)
+502    Bad gateway when a server's upstream server fails 
+503    Service Unavailable when there is a high traffic
